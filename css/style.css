@@ -1,0 +1,140 @@
+body{
+    overflow-x: hidden;
+}
+.container{
+    margin-top: 2%;
+}
+.info .card{
+    margin: 1%;
+   
+}
+#info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    
+}
+.img-center{
+    justify-content: center;
+    display: flex;
+    margin-top: 4%;
+}
+.categorias{
+    display: flex;
+    list-style: none;
+    margin: 1%;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+.categorias li{
+    margin-left: 1%;
+}
+.card:hover{
+    background: goldenrod !important;
+    box-shadow: rgb(87, 66, 13) 5px 2px 5px 2px;
+    
+}
+.card.card2:hover{
+    box-shadow: none;
+    background: #212529 !important;
+}
+.card{
+    cursor: pointer;
+    padding: 1%;
+    margin: 1% !important;
+}
+.card.card2{
+    position:fixed; 
+    z-index: 2000;
+    top: 1%;
+    left: auto;
+    width: 40vw !important;
+    height: 95vh !important;
+    border: 2px solid goldenrod;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all ease 0.3s;
+}
+.card.card2 h4 svg{
+    color: rgb(1, 160, 1);
+}
+.card.card2 h4{
+    color: rgb(1, 160, 1);
+    
+    border-bottom: 1px solid goldenrod;
+}
+.card ul{
+    display: none;
+    
+}
+.card.card2 ul{
+    display: initial;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.card.card2 ul li{
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+    background-color: goldenrod;
+    border-radius: 20%;
+}
+.card.card2 .card-body{
+    margin-top: 1%;
+}
+
+
+@media (max-width: 600px) {
+    .card.card2{
+        width: 85vw !important;
+    }
+}
+.card.card2 img{
+    height: 50%;
+}
+
+.desplegar-info{
+    background: black;
+    height: 2px;
+    transition:ease-out 0.4s;
+}
+.desplegado-info{
+    background:rgb(247, 191, 49);
+    
+    height: 700px;
+}
+.vm-info{
+    margin: 0 45% 0 45%;
+}
+.vm-info svg {
+    width: 100px;
+    height: 50px;    
+    cursor: pointer;
+}
+.cont-invisible{
+    visibility: hidden;
+    
+}
+.cont-invisible.cont-visible{
+    visibility: visible;
+    transition-delay: 0.3s;
+    
+}
+.ul-info li{
+    letter-spacing: 0.15rem;
+    padding: 1%;
+   
+    border-bottom: 1px gold solid;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+.ul-info li:hover{
+    background-color: goldenrod;
+}
+.ul-info{
+    list-style: none;
+    padding-left: 0;
+    
+}
